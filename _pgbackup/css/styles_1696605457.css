@@ -1,82 +1,4 @@
 /* *************************** */
-/* NORMALIZE, RESET and PRESETS */
-/* *************************** */
-:root {
-    --fonts--2: clamp(0.7rem, calc(0.75rem + -0.06vw), 0.74rem);
-    --fonts--1: clamp(0.89rem, calc(0.87rem + 0.09vw), 0.94rem);
-    --fonts-0: clamp(1.06rem, calc(1rem + 0.33vw), 1.25rem);
-    --fonts-1: clamp(1.28rem, calc(1.14rem + 0.68vw), 1.67rem);
-    --fonts-2: clamp(1.53rem, calc(1.29rem + 1.2vw), 2.22rem);
-    --fonts-3: clamp(1.84rem, calc(1.45rem + 1.96vw), 2.96rem);
-    --fonts-4: clamp(2.2rem, calc(1.6rem + 3.03vw), 3.95rem);
-    --fonts-5: clamp(2.64rem, calc(1.73rem + 4.55vw), 5.26rem);
-    --step--2: clamp(0.61rem, calc(0.54rem + 0.33vw), 0.8rem);
-    --step--1: clamp(0.73rem, calc(0.64rem + 0.47vw), 1rem);
-    --step-0: clamp(0.88rem, calc(0.74rem + 0.65vw), 1.25rem);
-    --step-1: clamp(1.05rem, calc(0.87rem + 0.89vw), 1.56rem);
-    --step-2: clamp(1.26rem, calc(1.02rem + 1.21vw), 1.95rem);
-    --step-3: clamp(1.51rem, calc(1.19rem + 1.62vw), 2.44rem);
-    --step-4: clamp(1.81rem, calc(1.38rem + 2.15vw), 3.05rem);
-    --step-5: clamp(2.18rem, calc(1.61rem + 2.85vw), 3.82rem);
-
-    /* UTOPIA FLUID SPACING */
-    --space-3xs: clamp(0.25rem, calc(0.23rem + 0.11vw), 0.31rem);
-    --space-2xs: clamp(0.56rem, calc(0.54rem + 0.11vw), 0.63rem);
-    --space-xs: clamp(0.81rem, calc(0.77rem + 0.22vw), 0.94rem);
-    --space-s: clamp(1.06rem, calc(1rem + 0.33vw), 1.25rem);
-    --space-m: clamp(1.63rem, calc(1.54rem + 0.43vw), 1.88rem);
-    --space-l: clamp(2.13rem, calc(1.99rem + 0.65vw), 2.5rem);
-    --space-xl: clamp(3.19rem, calc(2.99rem + 0.98vw), 3.75rem);
-    --space-2xl: clamp(4.25rem, calc(3.99rem + 1.3vw), 5rem);
-    --space-3xl: clamp(6.38rem, calc(5.98rem + 1.96vw), 7.5rem);
-
-    /* SPECIAL SPACE FOR OSCAR HERO HEADLINE??? */
-    --space-s-l: clamp(1.06rem, calc(0.56rem + 2.5vw), 2.5rem);
-
-    /* One-up pairs */
-    --space-3xs-2xs: clamp(0.25rem, calc(0.12rem + 0.65vw), 0.63rem);
-    --space-2xs-xs: clamp(0.56rem, calc(0.43rem + 0.65vw), 0.94rem);
-    --space-xs-s: clamp(0.81rem, calc(0.66rem + 0.76vw), 1.25rem);
-    --space-s-m: clamp(1.06rem, calc(0.78rem + 1.41vw), 1.88rem);
-    --space-m-l: clamp(1.63rem, calc(1.32rem + 1.52vw), 2.5rem);
-    --space-l-xl: clamp(2.13rem, calc(1.56rem + 2.83vw), 3.75rem);
-    --space-xl-2xl: clamp(3.19rem, calc(2.56rem + 3.15vw), 5rem);
-    --space-2xl-3xl: clamp(4.25rem, calc(3.12rem + 5.65vw), 7.5rem);
-
-    /* Global Section padding */
-    --space-l-2xl: clamp(1rem, calc(-3.5rem + 16vw), 11.25rem);
-
-    /* padding-inline: */
-    --space-2xl: clamp(5rem, calc(4.65rem + 1.74vw), 6rem);
-
-    /* padding-block: var(--space-2xl); */
-    /* Custom pairs */
-    --lineh--2: clamp(1.04rem, calc(1.04rem + 0.02vw), 1.06rem);
-    --lineh--1: clamp(1.25rem, calc(1.2rem + 0.27vw), 1.41rem);
-    --lineh-0: clamp(1.5rem, calc(1.37rem + 0.65vw), 1.88rem);
-    --lineh-1: clamp(1.8rem, calc(1.56rem + 1.22vw), 2.5rem);
-    --lineh-2: clamp(2.16rem, calc(1.75rem + 2.04vw), 3.33rem);
-    --lineh-3: clamp(2.59rem, calc(1.95rem + 3.22vw), 4.44rem);
-    --lineh-4: clamp(3.11rem, calc(2.13rem + 4.89vw), 5.92rem);
-    --lineh-5: clamp(3.73rem, calc(2.29rem + 7.23vw), 7.89rem);
-
-    /* UTOPIA FLUID GRID AND CONTAINER */
-    --grid-max-width: 93rem;
-    --grid-gutter: var(--space-xl-xl);
-    --grid-columns: 12;
-
-    /* COLORS */
-    --text-white: #f0f0f0;
-    --clr-white: white;
-    --clr-blk: #242424;
-    --accent-lt: #FDC436;
-    --accent-dk: #4700df;
-    --accent-red: #cc071e;
-}
-
-
-
-/* *************************** */
 /* ***** SITE PRELOADER ****** */
 /* *************************** */
 /* .site-preloader {
@@ -98,8 +20,6 @@
     height: auto;
     width: 7%;
 } */
-
-
 /* *************************** */
 /* ******* NAV DESKTOP ******* */
 /* *************************** */
@@ -210,18 +130,6 @@
     #nav a {
         /* Text on mobile menu */
         color: var(--clr-blk);
-    }
-    
-    .nav-link {
-        /* font-weight: bold; */
-        font-size: 1.2.1rem;
-        /* text-transform: uppercase; */
-        /* text-decoration: none; */
-        /* color: var(--accent-dk); */ */
-        padding: 7px 0px;paddingpaddingpaddingpadding
-        /* display: inline-block; */
-        position: relative;position
-        opacity: 0.75; */
     }
 }
 
@@ -683,39 +591,12 @@ ul li i:after {
 /* *************************** */
 /* ******** ABOUT ME ********* */
 /* *************************** */
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
     .about__img-wrapper {
-        display: flex;
-        width: 400px;
+        width: 100%;
         justify-content: center;
     }
 }
-
-.about__img {
-    max-width: 400px;
-} */
-
-/* .about__img-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.about__img {
-    max-width: 100%;
-    height: auto; */
-
-    .about__img-wrapper {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
-    
-    /* Set max-width for responsive behavior */
-    .about__img {
-        max-width: 400px;
-        height: auto; /* Maintain aspect ratio */
-        object-fit: contain; /* Choose 'contain' or 'cover' based on your preference */
-    }
 
 /* *************************** */
 /* ********** BLOG *********** */
@@ -945,9 +826,6 @@ a {
     }
 }
 
-@media (max-width: 800px) {
-    [data-aos] {
-        -webkit-transform: none !important;
-        transform: none !important;
-    }
-}
+
+
+
