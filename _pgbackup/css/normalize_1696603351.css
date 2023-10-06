@@ -145,7 +145,7 @@ li {
     }
 }
 
-/* Remove all animations and transitions below 800px screen width */
+/* Remove all animations and transitions on smaller screen sizes */
 @media only screen and (max-width: 800px) {
     * {
         -webkit-animation: none !important;
