@@ -24,6 +24,7 @@
 /* *************************** */
 /* ******* NAV DESKTOP ******* */
 /* *************************** */
+
 #nav {
     display: flex;
     flex-direction: row;
@@ -54,7 +55,10 @@
     text-decoration: none;
 }
 
-/* nav links */
+/* *************************** */
+/* ******** NAV LINKS ******** */
+/* *************************** */
+
 .nav-link {
     font-weight: bold;
     font-size: 1.2.1rem;
@@ -88,7 +92,10 @@
     width: 100%;
 }
 
-/* menu */
+/* *************************** */
+/* ********** MENU *********** */
+/* *************************** */
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -123,6 +130,7 @@
 /* *************************** */
 /* ******* NAV MOBILE ******** */
 /* *************************** */
+
 @media (max-width: 700px) {
     #nav a {
         /* Text on mobile menu */
@@ -196,7 +204,6 @@
         justify-content: center;
         align-items: center;
         padding-bottom: 2.5em;
-
         /* Mobile menu background */
         /* background-color: rgb(230, 56, 56); */
         z-index: 0;
@@ -235,6 +242,7 @@
 /* *************************** */
 /* ****** HERO SECTION ******* */
 /* *************************** */
+
 #hero {
     padding-top: var(--space-xl);
     padding-bottom: 0;
@@ -318,6 +326,7 @@
 /* *************************** */
 /* ******* TESTIMONIAL ******* */
 /* *************************** */
+
 .testimonial-icon {
     width: 60px;
     height: 45px;
@@ -341,6 +350,7 @@
 /* *************************** */
 /* ****** VISA SERVICES ****** */
 /* *************************** */
+
 .ul-wrapper {
     max-width: 230px;
     margin-bottom: 2vw;
@@ -380,6 +390,7 @@
 /* *************************** */
 /* ******* FAQ SECTION ******* */
 /* *************************** */
+
 .faq-image {
     width: 50%;
     margin: auto;
@@ -526,7 +537,6 @@ ul li i:after {
     max-height: 0;
     transition: 0.3s;
     opacity: 0;
-
     /* transform: translate(0, 50%); */
 }
 
@@ -541,6 +551,7 @@ ul li i:after {
 /* *************************** */
 /* ****** SERVICE CARDS ****** */
 /* *************************** */
+
 .cards__1 {
     display: flex;
     padding: 3em;
@@ -588,6 +599,7 @@ ul li i:after {
 /* *************************** */
 /* ******** ABOUT ME ********* */
 /* *************************** */
+
 @media (max-width: 800px) {
     .about__img-wrapper {
         max-width: 400px;
@@ -598,7 +610,7 @@ ul li i:after {
 /* *************************** */
 /* ********** BLOG *********** */
 /* *************************** */
-/* SmolCSS Styles */
+
 .grid1-head {
     font-size: 1.3rem;
     font-weight: 600;
@@ -638,7 +650,6 @@ ul li i:after {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-
     /* Supported for flexbox in modern browsers since April 2021 */
     gap: 0.5rem;
     -webkit-box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.35);
@@ -739,6 +750,7 @@ a {
 /* *************************** */
 /* ********* FOOTER ********** */
 /* *************************** */
+
 .footer__nav-wrapper {
     border-top: 2pt solid var(--text-accent);
     border-bottom: 2pt solid var(--text-accent);
