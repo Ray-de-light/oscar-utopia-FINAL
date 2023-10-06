@@ -145,16 +145,6 @@ li {
     }
 }
 
-/* Remove all animations and transitions on smaller screen sizes */
-@media only screen and (max-width: 800px) {
-    * {
-        -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -ms-animation: none !important;
-        animation: none !important;
-    }
-}
-
 /* Grids, layouts, containers, heads */
 .r-grid {
     display: grid;
@@ -239,10 +229,11 @@ h5 {
 }
 
 p {
-    font-weight: 400;
+    font-weight: 300;
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
         sans-serif;
-    font-size: clamp(0.9rem, calc(0.96rem + 0.22vw), 1.13rem);
+
+    /* font-size: clamp(0.9rem, calc(0.96rem + 0.22vw), 1.13rem); */
     line-height: 1.5;
     margin-bottom: 0.7rem;
 }
