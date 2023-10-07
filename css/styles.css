@@ -74,8 +74,6 @@
     --accent-red: #cc071e;
 }
 
-
-
 /* *************************** */
 /* ***** SITE PRELOADER ****** */
 /* *************************** */
@@ -98,8 +96,6 @@
     height: auto;
     width: 7%;
 } */
-
-
 /* *************************** */
 /* ******* NAV DESKTOP ******* */
 /* *************************** */
@@ -211,17 +207,19 @@
         /* Text on mobile menu */
         color: var(--clr-blk);
     }
-    
+
     .nav-link {
         /* font-weight: bold; */
-        font-size: 1.2.1rem;
-        /* text-transform: uppercase; */
-        /* text-decoration: none; */
-        /* color: var(--accent-dk); */ */
-        padding: 7px 0px;paddingpaddingpaddingpadding
-        /* display: inline-block; */
-        position: relative;position
-        opacity: 0.75; */
+        font-size: 1.2rem;
+
+        /* text-transform: uppercase;
+    text-decoration: none;
+    color: var(--accent-dk); */
+        padding: 5px 0px;
+
+        /* display: inline-block;
+    position: relative;
+    opacity: 0.75; */
     }
 }
 
@@ -380,7 +378,7 @@
 
 @media (max-width: 560px) {
     .hero-img {
-        max-width: 400px;
+        /* max-width: 400px; */
         width: 100%;
         height: auto;
         box-shadow: none;
@@ -694,7 +692,6 @@ ul li i:after {
 .about__img {
     max-width: 400px;
 } */
-
 /* .about__img-wrapper {
     display: flex;
     justify-content: center;
@@ -703,19 +700,22 @@ ul li i:after {
 .about__img {
     max-width: 100%;
     height: auto; */
+.about__img-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
 
-    .about__img-wrapper {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
-    
-    /* Set max-width for responsive behavior */
-    .about__img {
-        max-width: 400px;
-        height: auto; /* Maintain aspect ratio */
-        object-fit: contain; /* Choose 'contain' or 'cover' based on your preference */
-    }
+/* Set max-width for responsive behavior */
+.about__img {
+    max-width: 400px;
+    height: auto;
+
+    /* Maintain aspect ratio */
+    object-fit: contain;
+
+    /* Choose 'contain' or 'cover' based on your preference */
+}
 
 /* *************************** */
 /* ********** BLOG *********** */
