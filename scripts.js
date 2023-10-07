@@ -1,4 +1,4 @@
-// JS code to close mobile menu with escape key //
+// JS code to close mobile menu with escape key //document.querySe
 
 // Select elements
 const menu = document.querySelector('.menu');
