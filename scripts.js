@@ -1,4 +1,4 @@
-// JS code to close mobile menu with escape key //document.querySe
+// JS code to close mobile menu with escape key //
 
 // Select elements
 const menu = document.querySelector('.menu');
@@ -40,21 +40,6 @@ menuItems.forEach((item) => {
   });
 });
 
-// This is for sticky header
-    // <script>
-    //     var prevScrollpos = window.pageYOffset;
-
-    //     window.onscroll = function () {
-    //         var currentScrollPos = window.pageYOffset;
-
-    //         if (prevScrollpos > currentScrollPos) {
-    //             document.getElementById("#nav").classList.remove("hide");
-    //         } else {
-    //             document.getElementById("#nav").classList.add("hide");
-    //         }
-
-    //         prevScrollpos = currentScrollPos;
-    //     }
     const body = document.body;
 let lastScroll = 0;
 
@@ -77,3 +62,19 @@ window.addEventListener("scroll", () => {
 	}
 	lastScroll = currentScroll;
 });
+
+// This is for sticky header on the HTML page
+    // <script>
+    //     var prevScrollpos = window.pageYOffset;
+
+    //     window.onscroll = function () {
+    //         var currentScrollPos = window.pageYOffset;
+
+    //         if (prevScrollpos > currentScrollPos) {
+    //             document.getElementById("#nav").classList.remove("hide");
+    //         } else {
+    //             document.getElementById("#nav").classList.add("hide");
+    //         }
+
+    //         prevScrollpos = currentScrollPos;
+    //     }
