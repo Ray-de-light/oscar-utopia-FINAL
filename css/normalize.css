@@ -2,8 +2,6 @@
 /* ***CORE, RESET and PRESETS ***/
 /* **************************** */
 
-/* SEARCH "fluid" for next section */
-
 /* CORE */
 
 :root,
@@ -249,6 +247,7 @@ h5 {
 }
 
 p {
+  font-size: clamp(0.84rem, calc(0.14vw + 0.82rem), 0.94rem);
   font-weight: 400;
   font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
     sans-serif;

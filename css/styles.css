@@ -209,17 +209,15 @@
     }
 
     .nav-link {
-        /* font-weight: bold; */
+        font-weight: bold;
         font-size: 1.2rem;
-
-        /* text-transform: uppercase;
-    text-decoration: none;
-    color: var(--accent-dk); */
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--accent-dk);
         padding: 5px 0px;
-
-        /* display: inline-block;
-    position: relative;
-    opacity: 0.75; */
+        display: inline-block;
+        position: relative;
+        opacity: 0.75;
     }
 }
 
@@ -681,7 +679,6 @@ ul li i:after {
 /* *************************** */
 /* ******** ABOUT ME ********* */
 /* *************************** */
-
 .about__img-wrapper {
     display: flex;
     align-items: flex-start;
@@ -947,14 +944,14 @@ BUTTONS
     overflow: hidden;
     text-decoration: none;
     text-align: center;
-  }
-  
-  .pri-btn:hover {
+}
+
+.pri-btn:hover {
     background-color: var(--accent-lt);
     color: var(--bg-dk);
-  }
-  
-  .sec-btn {
+}
+
+.sec-btn {
     background-color: var(--clr-white);
     color: black;
     padding: 12px 25px;
@@ -970,18 +967,18 @@ BUTTONS
     overflow: hidden;
     text-decoration: none;
     text-align: center;
-  }
-  
-  .sec-btn:hover {
+}
+
+.sec-btn:hover {
     background-color: var(--accent-lt);
-  }
-  
-/* Remove all animations and transitions below 800px screen width */
-@media only screen and (max-width: 800px) {
-    * {
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
+
+    /* Remove all animations and transitions below 800px screen width */
+    @media only screen and (max-width: 800px) {
+        * {
+            -webkit-animation: none !important;
+            -moz-animation: none !important;
+            -ms-animation: none !important;
+            animation: none !important;
+        }
     }
 }
