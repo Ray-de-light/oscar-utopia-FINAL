@@ -177,17 +177,6 @@
     flex-direction: row;
 }
 
-.menu>l1 {
-    display: flex;
-    justify-content: center;
-    padding: 2em 0;
-    width: 100%;
-    color: var(--clr-blk);
-    background-color: var(--bg-dk);
-    margin: 0 1rem;
-    overflow: hidden;
-}
-
 .navbar-logo-wrapper {
     width: 120px;
     margin: 0.5em 1.2em;
@@ -201,6 +190,8 @@
 #nav li {
     margin: 0 1rem;
     overflow: hidden;
+
+    /* list-style: none; */
 }
 
 /* *************************** */
@@ -627,7 +618,8 @@ ul li i:after {
 
 /* *************************** */
 /* ****** SERVICE CARDS ****** */
-/* *************************** */.cards__1 {
+/* *************************** */
+.cards__1 {
     display: flex;
     padding: clamp(1.35rem, calc(2.38vw + 0.88rem), 2.96rem);
     background-color: var(--clr-white);
