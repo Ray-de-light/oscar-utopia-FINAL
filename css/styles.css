@@ -381,9 +381,8 @@
 
 @media (max-width: 560px) {
     .hero-img {
-        /* max-width: 400px; */
+        max-width: 300px;
         width: 100%;
-        height: auto;
         box-shadow: none;
         -webkit-box-shadow: none;
         border-radius: none;
@@ -527,7 +526,7 @@ ul li i:after {
 #faq p {
     color: #333;
     text-align: left;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 21px;
     position: relative;
     overflow: hidden;
@@ -628,10 +627,9 @@ ul li i:after {
 
 /* *************************** */
 /* ****** SERVICE CARDS ****** */
-/* *************************** */
-.cards__1 {
+/* *************************** */.cards__1 {
     display: flex;
-    padding: 3em;
+    padding: clamp(1.35rem, calc(2.38vw + 0.88rem), 2.96rem);
     background-color: var(--clr-white);
     flex-direction: column;
     justify-content: space-between;
@@ -659,7 +657,7 @@ ul li i:after {
 }
 
 .cards__icon-wrapper p {
-    font-size: 15px;
+    font-size: clamp(0.84rem, calc(0.14vw + 0.82rem), 0.94rem);
     margin-bottom: 0;
 }
 
@@ -705,7 +703,7 @@ ul li i:after {
 }
 
 .grid1 {
-    min-height: 100vh;
+    /* min-height: 100vh */
     text-rendering: optimizeSpeed;
     line-height: 1.4;
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
