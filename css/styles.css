@@ -649,7 +649,7 @@ ul li i:after {
 }
 
 .cards__icon-wrapper p {
-    font-size: clamp(0.84rem, calc(0.14vw + 0.82rem), 0.94rem);
+    font-size: var(--text-m);
     margin-bottom: 0;
 }
 
@@ -690,8 +690,6 @@ ul li i:after {
 
 .grid1-p {
     margin: 0;
-
-    /* font-size: clamp(0.81rem, calc(0.77rem + 0.22vw), 0.94rem) */
 }
 
 .grid1 {
