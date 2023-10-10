@@ -150,6 +150,8 @@ li {
             scroll-behavior: auto;
         }
     }
+
+    line-height: 1.5;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
@@ -274,8 +276,8 @@ BUTTONS
 }
 
 .pri-btn:hover {
-    background-color: #3c02bb;
-    color: #efe6ff;
+    background-color: var(--primary-hover);
+    color: var(--clr-white);
 }
 
 .sec-btn {
@@ -297,8 +299,8 @@ BUTTONS
 }
 
 .sec-btn:hover {
-    background-color: #efe6ff;
-    color: );
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 /* Remove all animations and transitions below 800px screen width */

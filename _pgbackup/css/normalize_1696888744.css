@@ -43,9 +43,8 @@
 :root.cf-theme-dark,
 :root.cf-theme-light .theme-inverted {
     --primary: hsl(238, 100%, 42%);
-    --primary-hover: hsl(238, 100%, 34%);
-    --secondary: hsl(198, 74%, 31%);
-    --tertiary: hsl(0, 94%, 48%);
+    --secondary: hsl(0, 94%, 48%);
+    --tertiary: hsl(198, 74%, 31%);
     --dark: hsl(0, 0%, 0%);
     --light: hsl(0, 0%, 80%);
 }
@@ -150,6 +149,15 @@ li {
             scroll-behavior: auto;
         }
     }
+
+    /* Remove all animations and transitions for people that prefer not to see them */
+    @media (prefers-reduced-motion: reduce) {
+        html:focus-within {
+            scroll-behavior: auto;
+        }
+    }
+
+    line-height: 1.5;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
@@ -274,12 +282,12 @@ BUTTONS
 }
 
 .pri-btn:hover {
-    background-color: #3c02bb;
-    color: #efe6ff;
+    background-color: var(--accent-lt);
+    color: var(--bg-dk);
 }
 
 .sec-btn {
-    background-color: var(--light);
+    background-color: var(--clr-white);
     color: black;
     padding: 12px 25px;
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
@@ -297,8 +305,7 @@ BUTTONS
 }
 
 .sec-btn:hover {
-    background-color: #efe6ff;
-    color: );
+    background-color: var(--accent-lt);
 }
 
 /* Remove all animations and transitions below 800px screen width */
