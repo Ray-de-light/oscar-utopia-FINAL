@@ -75,28 +75,6 @@
 }
 
 /* *************************** */
-/* ***** SITE PRELOADER ****** */
-/* *************************** */
-/* .site-preloader {
-    display: grid;
-    position: fixed;
-    height: 100dvh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--accent-dk);
-    z-index: 999;
-    opacity: 0%;
-    visibility: hidden;
-}
-
-.preloader-logo {
-    height: auto;
-    width: 7%;
-} */
-/* *************************** */
 /* ******* NAV DESKTOP ******* */
 /* *************************** */
 #nav {
@@ -649,8 +627,9 @@ ul li i:after {
 
 .cards__icons {
     color: var(--accent-red);
-    font-size: 16px;
+    font-size: 14px;
     margin-right: 0.8em;
+    margin-top: .25em;
 }
 
 .cards__icon-wrapper {

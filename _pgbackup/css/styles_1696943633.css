@@ -1,5 +1,5 @@
 /* *************************** */
-/* NORMALIZE & PRESETS */
+/* NORMALIZE, RESET and PRESETS */
 /* *************************** */
 :root {
     --fonts--2: clamp(0.7rem, calc(0.75rem + -0.06vw), 0.74rem);
@@ -65,7 +65,7 @@
     --grid-gutter: var(--space-xl-xl);
     --grid-columns: 12;
 
-    /* ALT COLORS */
+    /* COLORS */
     --text-white: #f0f0f0;
     --clr-white: white;
     --clr-blk: #242424;
@@ -74,232 +74,10 @@
     --accent-red: #cc071e;
 }
 
-/* ********* RESET BROWSERS ********* */
-/* Box sizing  and animation rules */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-
-    /* animation-duration: 0.01ms !important */
-    animation-iteration-count: 1 !important;
-
-    /* transition-duration: 0.01ms !important */
-    scroll-behavior: auto !important;
-}
-
-/* Remove default margin, padding */
-* {
-    padding: 0;
-    margin: 0;
-
-    /* font: inherit */
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
-    list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
-html,
-body {
-    height: 100%;
-
-    /* font-size 1em = 10px */
-}
-
-/* Set core body defaults */
-body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-}
-
-/* An element that doesn't have a class gets default styles */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture,
-svg {
-    width: 100%;
-    height: auto;
-    -webkit-box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.35);
-    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.35);
-    border-radius: 0.5rem;
-}
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-}
-
-.r-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    grid-gap: 2em;
-}
-
-.r-container {
-    max-width: 80rem;
-    margin: 0 auto;
-}
-
-@media (max-width: 800px) {
-    .r-grid {
-        grid-template-columns: 1fr;
-        width: 100%;
-        justify-items: center;
-    }
-}
-
-.u-container {
-    max-width: var(--grid-max-width);
-    margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Cinzel, serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: 1.3;
-}
-
-.section-lt {
-    background-color: var(--clr-white);
-    padding-block: var(--space-2xl);
-    padding-inline: var(--space-l-2xl);
-}
-
-.section-dk {
-    background-color: var(--accent-dk);
-    padding-block: var(--space-2xl);
-    padding-inline: var(--space-l-2xl);
-}
-
-.section-lt h1,
-.section-lt h2,
-.section-lt h3,
-.section-lt li,
-.section-lt p {
-    color: black;
-}
-
-.section-dk h1,
-.section-dk h2,
-.section-dk h3,
-.section-dk li,
-.section-dk p {
-    color: var(--text-white);
-}
-
-h1 {
-    font-size: var(--fonts-4);
-    margin-bottom: var(--space-l);
-}
-
-h2 {
-    font-size: var(--fonts-2);
-    margin-bottom: clamp(0.63rem, calc(0.58rem + 0.22vw), 0.75rem);
-}
-
-h3 {
-    font-size: var(--fonts-1);
-    margin-bottom: 0.5em;
-}
-
-h4 {
-    font-size: 1.25rem;
-}
-
-h5 {
-    font-size: 1.125rem;
-}
-
-p {
-    font-weight: 400;
-    font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
-        sans-serif;
-    font-size: clamp(0.9rem, calc(0.96rem + 0.22vw), 1.13rem);
-    line-height: 1.5;
-    margin-bottom: 0.7rem;
-}
-
-li {
-    font-weight: 400;
-    font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
-        sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* *************************** */
-/* ********* BUTTONS ********* */
-/* *************************** */
-.pri-btn {
-    background-color: var(--accent-dk);
-    padding: 12px 25px;
-    font-family: Poppins;
-    color: var(--clr-white);
-    width: 250px;
-    font-size: 1.2rem;
-    line-height: 1.1;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    border: 2px solid black;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-    text-align: center;
-}
-
-.pri-btn:hover {
-    background-color: var(--accent-lt);
-    color: var(--bg-dk);
-}
-
-.sec-btn {
-    background-color: var(--clr-white);
-    color: black;
-    padding: 12px 25px;
-    font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
-        sans-serif;
-    width: 250px;
-    font-size: 1.2rem;
-    line-height: 1.1;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    border: 2px solid black;
-    overflow: hidden;
-    text-decoration: none;
-    text-align: center;
-}
-
-.sec-btn:hover {
-    background-color: var(--accent-lt);
-}
-
 /* *************************** */
 /* ***** SITE PRELOADER ****** */
 /* *************************** */
-.site-preloader {
+/* .site-preloader {
     display: grid;
     position: fixed;
     height: 100dvh;
@@ -317,8 +95,7 @@ li {
 .preloader-logo {
     height: auto;
     width: 7%;
-}
-
+} */
 /* *************************** */
 /* ******* NAV DESKTOP ******* */
 /* *************************** */
@@ -333,8 +110,6 @@ li {
     -webkit-box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.25);
 
-    /* Padding to distance mobile menu from edge */
-    /* padding-right: 1em */
     /* Create sticky header */
     z-index: 3;
     position: fixed;
@@ -354,8 +129,8 @@ li {
 
 /* nav links */
 .nav-link {
-    font-weight: bold;
-    font-size: 1.2.1rem;
+    /* font-weight: bold */
+    font-size: 1.1rem;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--accent-dk);
@@ -363,6 +138,7 @@ li {
     display: inline-block;
     position: relative;
     opacity: 0.75;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -382,6 +158,13 @@ li {
     bottom: 10px;
 }
 
+@media (max-width: 700px) {
+    .nav-link-ltr::before {
+        width: 0%;
+        bottom: 0px;
+    }
+}
+
 .nav-link-ltr:hover::before {
     width: 100%;
 }
@@ -390,21 +173,6 @@ li {
 .menu {
     display: flex;
     flex-direction: row;
-
-    /* list-style-type: none;
-    margin: 0;
-    padding: 0; */
-}
-
-.menu>l1 {
-    display: flex;
-    justify-content: center;
-    padding: 2em 0;
-    width: 100%;
-    color: var(--clr-blk);
-    background-color: var(--bg-dk);
-    margin: 0 1rem;
-    overflow: hidden;
 }
 
 .navbar-logo-wrapper {
@@ -420,6 +188,8 @@ li {
 #nav li {
     margin: 0 1rem;
     overflow: hidden;
+
+    /* list-style: none; */
 }
 
 /* *************************** */
@@ -494,10 +264,15 @@ li {
         margin-top: 60px;
         left: 0;
         flex-direction: column;
+        background-color: white;
         width: 100%;
         justify-content: center;
         align-items: center;
-        padding-bottom: 2.5em;
+
+        /* padding-bottom: 2em */
+        border-bottom: 1pt solid var(--bg-dk);
+        -webkit-box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.25);
 
         /* Mobile menu background */
         /* background-color: rgb(230, 56, 56); */
@@ -513,8 +288,8 @@ li {
     }
 
     #menu-toggle:checked~.menu li {
-        height: 2.5em;
-        padding: 0.5em;
+        height: 3em;
+        padding: 0em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
@@ -526,7 +301,7 @@ li {
         width: 100%;
 
         /* Mobile menu background */
-        background-color: var(--clr-white);
+        /* background-color: var(--clr-white) */
     }
 
     .menu>li:not(:last-child) {
@@ -543,15 +318,16 @@ li {
     padding-inline: 3em 0;
 }
 
-@media (max-width: 825px) {
-    #hero {
-        padding-inline: var(--space-l-2xl);
-    }
-}
-
 .hero-footer-container {
     margin-right: 5%;
     margin-left: 5%;
+}
+
+.hero__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 2em;
+    grid-gap: 0;
 }
 
 .hero-btn-wrapper {
@@ -564,6 +340,27 @@ li {
     .hero-btn-wrapper {
         justify-content: center;
     }
+
+    .hero-h1,
+    .hero-lead {
+        text-align: center;
+    }
+
+    #hero {
+        padding-inline: var(--space-l-2xl);
+    }
+
+    .hero-h1 {
+        text-align: center;
+    }
+
+    .hero-lead {
+        text-align: center;
+    }
+
+    .hero__grid {
+        display: block;
+    }
 }
 
 .hero-h1 {
@@ -571,29 +368,15 @@ li {
     font-weight: 400;
 }
 
-@media (max-width: 800px) {
-    .hero-h1 {
-        text-align: center;
-    }
+.hero-lead {
+    width: 100%;
+    margin-bottom: var(--space-l);
+    font-size: var(--text-xl);
+    font-weight: 400;
+    line-height: var(--lineh-1);
 }
 
-.hero-img {
-    height: 330px;
-    width: 400px;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    border-radius: none;
-}
-
-@media (max-width: 560px) {
-    .hero-img {
-        max-width: 400px;
-        width: 100%;
-        height: auto;
-        box-shadow: none;
-        -webkit-box-shadow: none;
-        border-radius: none;
-    }
+@media (max-width: 800px)  {
 }
 
 .hero-img-wrapper {
@@ -604,16 +387,19 @@ li {
     align-items: flex-end;
 }
 
-.hero-lead {
-    width: 100%;
-    margin-bottom: var(--space-l);
-    font-size: var(--fonts-1);
-    line-height: var(--lineh-1);
+.hero-img {
+    height: auto;
+    width: 400px !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: none;
 }
 
-@media (max-width: 800px) {
-    .hero-lead {
-        text-align: center;
+@media (max-width: 600px) {
+    .hero-img {
+        max-width: 300px;
+        width: 100%;
+        box-shadow: none;
     }
 }
 
@@ -724,7 +510,7 @@ ul li i:after {
     color: #cc071e;
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
         sans-serif;
-    font-size: 1rem;
+    font-size: var(--text-m);
     line-height: 1.3;
     text-align: left;
 
@@ -741,7 +527,7 @@ ul li i:after {
 #faq p {
     color: #333;
     text-align: left;
-    font-size: 14px;
+    font-size: var(--text-m);
     line-height: 21px;
     position: relative;
     overflow: hidden;
@@ -841,19 +627,69 @@ ul li i:after {
 }
 
 /* *************************** */
+/* ****** SERVICE CARDS ****** */
+/* *************************** */
+.cards__1 {
+    display: flex;
+    padding: clamp(1.35rem, calc(2.38vw + 0.88rem), 2.96rem);
+    background-color: var(--clr-white);
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--clr-blk);
+}
+
+.cards__container {
+    background-color: gray;
+}
+
+.cards__upper-content {
+    padding-bottom: 2em;
+    background-color: var(--accent-dk);
+}
+
+.cards__icons {
+    color: var(--accent-red);
+    font-size: 16px;
+    margin-right: 0.8em;
+}
+
+.cards__icon-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards__icon-wrapper p {
+    font-size: var(--text-m);
+    margin-bottom: 0;
+}
+
+.disclaimer {
+    font-size: clamp(0.81rem, calc(0.77rem + 0.22vw), 0.94rem);
+    padding-top: 3rem;
+    background-color: var(--accent-dk);
+}
+
+#services-list {
+    padding-bottom: 4vw;
+}
+
+/* *************************** */
 /* ******** ABOUT ME ********* */
 /* *************************** */
-@media (max-width: 800px) {
-    .about__img-wrapper {
-        max-width: 400px;
-        justify-content: center;
-    }
+.about__img-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about__img {
+    max-width: 400px;
+    height: auto;
 }
 
 /* *************************** */
 /* ********** BLOG *********** */
 /* *************************** */
-/* SmolCSS Styles */
 .grid1-head {
     font-size: 1.3rem;
     font-weight: 600;
@@ -864,11 +700,10 @@ ul li i:after {
 
 .grid1-p {
     margin: 0;
-    font-size: clamp(0.81rem, calc(0.77rem + 0.22vw), 0.94rem);
 }
 
 .grid1 {
-    min-height: 100vh;
+    /* min-height: 100vh */
     text-rendering: optimizeSpeed;
     line-height: 1.4;
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
@@ -992,7 +827,7 @@ a {
 }
 
 /* *************************** */
-/* FOOTER */
+/* ********* FOOTER ********** */
 /* *************************** */
 .footer__nav-wrapper {
     border-top: 2pt solid var(--text-accent);
@@ -1007,6 +842,10 @@ a {
     box-shadow: none;
     width: 150px;
     margin-bottom: 2em;
+}
+
+.footer__info-wrapper {
+    display: flex;
 }
 
 @media (max-width: 918px) {
@@ -1024,7 +863,12 @@ a {
     min-width: 60%;
 }
 
-/* FOOTER */
+.footer__icon {
+    color: var(--accent-lt);
+    font-size: 20px;
+    margin-right: 0.8em;
+}
+
 .footer__navbar a {
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
         sans-serif;
@@ -1039,8 +883,18 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+}
+
+@media (max-width: 605px) {
+    .footer__navbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
 }
 
 .footer__content-wrapper {
@@ -1048,10 +902,6 @@ a {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-}
-
-.footer__info-wrapper {
-    display: flex;
 }
 
 @media (max-width: 918px) {
@@ -1073,49 +923,9 @@ a {
     }
 }
 
-/* *************************** */
-/* SERVICE CARDS */
-/* *************************** */
-.cards__1 {
-    display: flex;
-    padding: 3em;
-    background-color: var(--clr-white);
-    flex-direction: column;
-    justify-content: space-between;
-    color: var(--clr-blk);
-}
-
-.cards__container {
-    background-color: gray;
-}
-
-.cards__upper-content {
-    padding-bottom: 2em;
-    background-color: var(--accent-dk);
-}
-
-.cards__icons {
-    color: var(--accent-red);
-    font-size: 16px;
-    margin-right: 0.8em;
-}
-
-.cards__icon-wrapper {
-    display: flex;
-    flex-direction: row;
-}
-
-.cards__icon-wrapper p {
-    font-size: clamp(0.81rem, calc(0.77rem + 0.22vw), 0.94rem);
-    margin-bottom: 0;
-}
-
-.disclaimer {
-    font-size: clamp(0.81rem, calc(0.77rem + 0.22vw), 0.94rem);
-    padding-top: 3rem;
-    background-color: var(--accent-dk);
-}
-
-#services-list {
-    padding-bottom: 4vw;
+@media (max-width: 800px) {
+    [data-aos] {
+        -webkit-transform: none !important;
+        transform: none !important;
+    }
 }

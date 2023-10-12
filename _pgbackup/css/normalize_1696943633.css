@@ -298,6 +298,7 @@ BUTTONS
 
 .sec-btn:hover {
     background-color: #efe6ff;
+    color: );
 }
 
 /* Remove all animations and transitions below 800px screen width */
