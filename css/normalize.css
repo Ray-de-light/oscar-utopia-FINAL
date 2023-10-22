@@ -25,7 +25,8 @@
     --text-xs: clamp(0.67rem, calc(-0.21vw + 0.71rem), 0.53rem);
     --text-s: clamp(0.75rem, calc(-0.07vw + 0.76rem), 0.7rem);
     --text-m: clamp(0.84rem, calc(0.14vw + 0.82rem), 0.94rem);
-    --text-l: clamp(0.95rem, calc(0.45vw + 0.86rem), 1.25rem);
+    --text-l: clamp(0.95rem, calc(0.45vw + 0.86rem), 1.1rem);
+    --text--l: clamp(0.95rem, calc(0.45vw + 0.86rem), 1rem);
     --text-xl: clamp(1.07rem, calc(0.89vw + 0.89rem), 1.67rem);
     --text-2xl: clamp(1.2rem, calc(1.51vw + 0.9rem), 2.22rem);
     --text-3xl: clamp(1.35rem, calc(2.38vw + 0.88rem), 2.96rem);
@@ -142,7 +143,7 @@ li {
     font-weight: 400;
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
     sans-serif;
-    font-size: var(--text-m);
+    font-size: var(--text-l);
 
     /* Remove all animations and transitions for people that prefer not to see them */
     @media (prefers-reduced-motion: reduce) {
@@ -242,8 +243,7 @@ h5 {
 }
 
 p {
-    font-size: var(--text-m);
-
+    font-size: var(--text-l);
     /* font-size: .9em; */
     font-weight: 300;
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,

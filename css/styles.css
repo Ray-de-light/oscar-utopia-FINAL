@@ -354,9 +354,6 @@
     line-height: var(--lineh-1);
 }
 
-@media (max-width: 800px)  {
-}
-
 .hero-img-wrapper {
     display: flex;
     justify-content: center;
@@ -488,7 +485,7 @@ ul li i:after {
     color: #cc071e;
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
         sans-serif;
-    font-size: var(--text-m);
+    font-size: var(--text-l);
     line-height: 1.3;
     text-align: left;
 
@@ -505,8 +502,8 @@ ul li i:after {
 #faq p {
     color: #333;
     text-align: left;
-    font-size: var(--text-m);
-    line-height: 21px;
+    font-size: var(--text--l);
+    line-height: 23px;
     position: relative;
     overflow: hidden;
     max-height: 570px;
@@ -638,7 +635,7 @@ ul li i:after {
 }
 
 .cards__icon-wrapper p {
-    font-size: var(--text-m);
+    font-size: var(--text-l);
     margin-bottom: 0;
 }
 
