@@ -79,7 +79,7 @@ H6 {
 /* FLUID GRIDS AND CONTAINER */
 :root {
     --grid-max-width: 93rem;
-    --grid-gutter: var(--space-xl-xl);
+    --grid-gutter: var(--space-l);
     --grid-columns: 12;
 }
 
