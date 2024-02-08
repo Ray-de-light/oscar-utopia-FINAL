@@ -867,6 +867,7 @@ a {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 0;
 }
 
 @media (max-width: 918px) {
