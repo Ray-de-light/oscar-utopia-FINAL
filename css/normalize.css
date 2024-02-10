@@ -3,7 +3,11 @@
 /* **************************** */
 /* CORE */
 :root,
+<<<<<<< Updated upstream
 :root.cf-theme-dark .theme-inverted {
+=======
+:root.cf-theme-dark .theme-inverted {
+>>>>>>> Stashed changes
     --primary: hsl(238, 100%, 62%);
     --secondary: hsl(0, 94%, 68%);
     --tertiary: hsl(198, 74%, 51%);
@@ -42,13 +46,208 @@
 }
 
 :root.cf-theme-dark,
+<<<<<<< Updated upstream
 :root.cf-theme-light .theme-inverted {
+=======
+:root.cf-theme-light .theme-inverted {
+>>>>>>> Stashed changes
     --primary: hsl(238, 100%, 42%);
     --primary-hover: hsl(238, 100%, 34%);
     --secondary: hsl(198, 74%, 31%);
     --tertiary: hsl(0, 94%, 48%);
     --dark: hsl(0, 0%, 0%);
     --light: hsl(0, 0%, 80%);
+<<<<<<< Updated upstream
+=======
+}
+
+/* ------------------------------------------- */
+/* ************* RESETS & PRESETS ************ */
+/* ------------------------------------------- */
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin, padding */
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* An element that doesn't have a class gets default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.35);
+    border-radius: 0.5rem;
+}
+
+li {
+    font-weight: 400;
+    font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
+    sans-serif;
+    font-size: .9rem;
+
+    /* Remove all animations and transitions for people that prefer not to see them */
+    @media (prefers-reduced-motion: reduce) {
+        html:focus-within {
+            scroll-behavior: auto;
+        }
+    }
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+}
+
+/* GRIDS, CONTAINERS, SECTIONS */
+:root {
+    --grid-max-width: 93rem;
+    --grid-gutter: var(--space-l);
+    --grid-columns: 12;
+}
+
+:root {
+    --grid-max-width: 93rem;
+    --grid-gutter: var(--space-l);
+    --grid-columns: 12;
+}
+
+.r-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 2em;
+}
+
+.r-container {
+    max-width: var(--grid-max-width);
+    margin: 0 auto;
+}
+
+.section-lt {
+    background-color: var(--clr-white);
+    padding-block: var(--space-2xl);
+    padding-inline: var(--space-l-2xl);
+}
+
+.section-dk {
+    background-color: var(--accent-dk);
+    padding-block: var(--space-2xl);
+    padding-inline: var(--space-l-2xl);
+}
+
+.section-lt h1,
+.section-lt h2,
+.section-lt h3,
+.section-lt li,
+.section-lt p {
+    color: black;
+}
+
+.section-dk h1,
+.section-dk h2,
+.section-dk h3,
+.section-dk li,
+.section-dk p {
+    color: white;
+}
+
+/* ***** FONTS ***** */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Cinzel, serif;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: var(--fonts-4);
+    margin-bottom: var(--space-l);
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: var(--fonts-2);
+    margin-bottom: clamp(0.63rem, calc(0.58rem + 0.22vw), 0.75rem);
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: var(--fonts-1);
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+h5 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+p {
+    font-size: .9rem;
+    color: inherit;
+    font-weight: 300;
+    font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
+    sans-serif;
+    line-height: 1.5;
+    margin-bottom: 0.7rem;
+>>>>>>> Stashed changes
 }
 
 /* CORE FONT SIZES AND HEIGHT */
@@ -76,6 +275,7 @@ H6 {
     font-size: var(--text-m);
     line-height: 1.4;
 } */
+<<<<<<< Updated upstream
 /* FLUID GRIDS AND CONTAINER */
 :root {
     --grid-max-width: 93rem;
@@ -254,6 +454,10 @@ p {
 
 /* **************************** 
 BUTTONS
+=======
+/* **************************** 
+BUTTONS
+>>>>>>> Stashed changes
 **************************** */
 .pri-btn {
     background-color: var(--accent-dk);
@@ -282,7 +486,11 @@ BUTTONS
     background-color: var(--light);
     color: black;
     padding: 12px 25px;
+<<<<<<< Updated upstream
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
+=======
+    font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
+>>>>>>> Stashed changes
     sans-serif;
     width: 250px;
     font-size: 1.2rem;
@@ -308,4 +516,8 @@ BUTTONS
         -ms-animation: none !important;
         animation: none !important;
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
