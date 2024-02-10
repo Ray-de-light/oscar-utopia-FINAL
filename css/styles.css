@@ -381,12 +381,7 @@
 .testimonial-icon-wrapper {
     width: 100%;
     height: auto;
-    text-align: center;
     margin-bottom: 2em;
-}
-
-#testimonial h2 {
-    text-align: center;
 }
 
 /* *************************** */
@@ -798,6 +793,7 @@ a {
     color: var(--accent-lt);
     font-size: 20px;
     margin-right: 0.8em;
+    margin-top: .1em;
 }
 
 .footer__navbar a {
@@ -860,4 +856,8 @@ a {
         -webkit-transform: none !important;
         transform: none !important;
     }
+}
+
+.wrapper-text-center {
+    text-align: center;
 }
