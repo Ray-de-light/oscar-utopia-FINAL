@@ -1,7 +1,7 @@
 /* *************************** */
 /* NORMALIZE, RESET and PRESETS */
 /* *************************** */
- /* UTOPIA */
+/* UTOPIA */
 :root {
     --fonts--2: clamp(0.7rem, calc(0.75rem + -0.06vw), 0.74rem);
     --fonts--1: clamp(0.89rem, calc(0.87rem + 0.09vw), 0.94rem);
@@ -11,7 +11,6 @@
     --fonts-3: clamp(1.84rem, calc(1.45rem + 1.96vw), 2.96rem);
     --fonts-4: clamp(2.2rem, calc(1.6rem + 3.03vw), 3.95rem);
     --fonts-5: clamp(2.64rem, calc(1.73rem + 4.55vw), 5.26rem);
-    
     --step--2: clamp(0.61rem, calc(0.54rem + 0.33vw), 0.8rem);
     --step--1: clamp(0.73rem, calc(0.64rem + 0.47vw), 1rem);
     --step-0: clamp(0.88rem, calc(0.74rem + 0.65vw), 1.25rem);
@@ -20,7 +19,6 @@
     --step-3: clamp(1.51rem, calc(1.19rem + 1.62vw), 2.44rem);
     --step-4: clamp(1.81rem, calc(1.38rem + 2.15vw), 3.05rem);
     --step-5: clamp(2.18rem, calc(1.61rem + 2.85vw), 3.82rem);
-
     --space-3xs: clamp(0.25rem, calc(0.23rem + 0.11vw), 0.31rem);
     --space-2xs: clamp(0.56rem, calc(0.54rem + 0.11vw), 0.63rem);
     --space-xs: clamp(0.81rem, calc(0.77rem + 0.22vw), 0.94rem);
@@ -70,7 +68,7 @@
     --text-white: #f0f0f0;
     --clr-white: white;
     --clr-blk: #242424;
-    --accent-lt: #FDC436;
+    --accent-lt: #fdc436;
     --accent-dk: #4700df;
     --accent-red: #cc071e;
 }
@@ -98,10 +96,11 @@
 /* nav links */
 .nav-link {
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
-        sans-serif;
+    sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
     color: var(--bg-dk);
+
     /* color: var(--accent-dk); */
     text-transform: uppercase;
     text-decoration: none;
@@ -209,16 +208,16 @@
     margin-top: 8px;
 }
 
-#menu-toggle:checked+.menu-button-container .menu-button::before {
+#menu-toggle:checked + .menu-button-container .menu-button::before {
     margin-top: 0px;
     transform: rotate(405deg);
 }
 
-#menu-toggle:checked+.menu-button-container .menu-button {
+#menu-toggle:checked + .menu-button-container .menu-button {
     background: rgba(153, 90, 90, 0);
 }
 
-#menu-toggle:checked+.menu-button-container .menu-button::after {
+#menu-toggle:checked + .menu-button-container .menu-button::after {
     margin-top: 0px;
     transform: rotate(-405deg);
 }
@@ -249,7 +248,7 @@
         z-index: 0;
     }
 
-    #menu-toggle~.menu li {
+    #menu-toggle ~ .menu li {
         height: 0;
         margin: 0;
         padding: 0;
@@ -257,13 +256,13 @@
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
-    #menu-toggle:checked~.menu li {
+    #menu-toggle:checked ~ .menu li {
         height: 3em;
         padding: 0em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
-    .menu>li {
+    .menu > li {
         display: flex;
         justify-content: center;
         margin: 0;
@@ -274,7 +273,7 @@
         /* background-color: var(--clr-white) */
     }
 
-    .menu>li:not(:last-child) {
+    .menu > li:not(:last-child) {
         border-bottom: 1px solid #444;
     }
 }
@@ -382,17 +381,11 @@
 .testimonial-icon-wrapper {
     width: 100%;
     height: auto;
-    text-align: center;
     margin-bottom: 2em;
 }
 
-<<<<<<< Updated upstream
-#testimonial h2 {
-    text-align: center;
-=======
 .testimonial-name {
     font-weight: 500;
->>>>>>> Stashed changes
 }
 
 /* *************************** */
@@ -446,45 +439,28 @@
 #faq {
     margin: auto;
     padding: 3em 2em;
-    text-align: center;
+    text-align: left;
     background-color: var(--clr-white);
     height: 100%;
 }
 
-#faq ul {
-    text-align: left;
-}
-
-.transition,
-p,
-ul li i:before,
-ul li i:after {
-    transition: all 0.3s;
-}
-
-#faq .no-select,
 #faq h2 {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     user-select: none;
-}
-
-#faq h1 {
     color: var(--clr-blk);
     margin-bottom: 10px;
     margin-top: 0;
     font-size: 50px;
 }
 
-#faq h2 {
-    color: #cc071e;
+#faq h3 {
+    color: #0e0909;
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
-        sans-serif;
+    sans-serif;
     font-size: var(--text-l);
     line-height: 1.5;
     text-align: left;
-
-    /* space from red letters to arrows */
     padding: 0px 17px 0 0;
     text-transform: none;
     font-weight: 400;
@@ -494,32 +470,54 @@ ul li i:after {
     transition: 0.2s;
 }
 
+details summary {
+    font-size: var(--text-l);
+
+    /* Set desired font size */
+    line-height: 1.3;
+
+    /* Set desired line height */
+    text-align: left;
+
+    /* Make sure question is left-aligned */
+    margin-left: 17px;
+
+    /* Adjust left margin to accommodate arrows (if needed) */
+    color: var(--clr-blk);
+    font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
+    sans-serif;
+    padding: 33px 0px 0 0;
+    text-transform: none;
+    font-weight: 400;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#faq details p {
+    transition: opacity 0.3s, max-height 0.6s;
+
+    /* Adjust as needed */
+    padding-left: 10px;
+}
+
 #faq p {
-    color: #333;
+    color: #cc071e;
     text-align: left;
     line-height: 23px;
     position: relative;
     overflow: hidden;
-    max-height: 570px;
+    max-height: 1000px;
     will-change: max-height;
     contain: layout;
     display: inline-block;
     opacity: 1;
-    transform: translate(0, 0);
     margin-top: 7px;
     margin-bottom: 0px;
-    padding: 0;
-    transition: 0.3s opacity, 0.6s max-height;
     hyphens: auto;
     z-index: 2;
 }
 
-<<<<<<< Updated upstream
-#faq ul {
-    list-style: none;
-    perspective: 900px;
-    padding: 0;
-=======
 .transition,
 p {
     transition: all 0.3s;
@@ -542,83 +540,12 @@ p {
     text-transform: none;
     font-weight: 400;
     display: block;
->>>>>>> Stashed changes
     margin: 0;
-}
-
-#faq ul li {
-    position: relative;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    background: var(--clr-white);
-
-    /* box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
-    -webkit-tap-highlight-color: transparent; */
-}
-
-#faq ul li+li {
-    margin-top: 15px;
-}
-
-#faq ul li:last-of-type {
-    padding-bottom: 0;
-}
-
-#faq ul li i {
-    position: absolute;
-    transform: translate(-6px, 0);
-    margin-top: 8px;
-    right: 5px;
-}
-
-#faq ul li i:before,
-ul li i:after {
-    content: "";
-    position: absolute;
-    background-color: #cc071e;
-    width: 3px;
-    height: 9px;
-}
-
-#faq ul li i:before {
-    transform: translate(-2px, 0) rotate(45deg);
-}
-
-#faq ul li i:after {
-    transform: translate(2px, 0) rotate(-45deg);
-}
-
-#faq ul li input[type="checkbox"] {
-    position: absolute;
     cursor: pointer;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    touch-action: manipulation;
+    transition: 0.2s;
 }
 
-#faq ul li input[type="checkbox"]:checked~h2 {
-    color: var(--clr-blk);
-}
-
-#faq ul li input[type="checkbox"]:checked~p {
-    /* margin-top: 0; */
-    max-height: 0;
-    transition: 0.3s;
-    opacity: 0;
-
-    /* transform: translate(0, 50%); */
-}
-
-#faq ul li input[type="checkbox"]:checked~i:before {
-    transform: translate(2px, 0) rotate(45deg);
-}
-
-#faq ul li input[type="checkbox"]:checked~i:after {
-    transform: translate(-2px, 0) rotate(-45deg);
-}
+*/
 
 /* *************************** */
 /* ****** SERVICE CARDS ****** */
@@ -629,9 +556,6 @@ ul li i:after {
     background-color: var(--clr-white);
     flex-direction: column;
     justify-content: space-between;
-<<<<<<< Updated upstream
-    color: var(--clr-blk);
-=======
 }
 
 .card__style {
@@ -640,7 +564,6 @@ ul li i:after {
     flex-direction: column;
     padding: 2em;
     justify-content: space-between;
->>>>>>> Stashed changes
 }
 
 .cards__container {
@@ -656,7 +579,7 @@ ul li i:after {
     color: var(--accent-red);
     font-size: 14px;
     margin-right: 0.8em;
-    margin-top: .25em;
+    margin-top: 0.4em;
 }
 
 .cards__icon-wrapper {
@@ -701,7 +624,7 @@ ul li i:after {
     font-weight: 600;
     margin-bottom: 0.5em;
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
-        sans-serif;
+    sans-serif;
 }
 
 .grid1-p {
@@ -713,7 +636,7 @@ ul li i:after {
     text-rendering: optimizeSpeed;
     line-height: 1.4;
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
-        sans-serif;
+    sans-serif;
     margin-top: 2.5em;
 }
 
@@ -742,38 +665,38 @@ ul li i:after {
     border-radius: 0.5rem;
 }
 
-.smol-card-component>img {
+.smol-card-component > img {
     aspect-ratio: var(--img-ratio);
     -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
 }
 
-.smol-card-component>img:first-child {
+.smol-card-component > img:first-child {
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.smol-card-component>img:last-child {
+.smol-card-component > img:last-child {
     border-radius: 0 0 0.5rem 0.5rem;
     margin-top: auto;
 }
 
-.smol-card-component> :not(img) {
+.smol-card-component > :not(img) {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
-.smol-card-component> :not(img):first-child {
+.smol-card-component > :not(img):first-child {
     margin-top: 1rem;
 }
 
 /* Enhanced `:not()` accepts a selector list,
   but as a fallback you can chain `:not()` instead */
-.smol-card-component> :last-of-type:not(img, h2, h3, h4) {
+.smol-card-component > :last-of-type:not(img, h2, h3, h4) {
     margin-bottom: 1rem;
 }
 
-.smol-card-component>a {
+.smol-card-component > a {
     -ms-flex-item-align: start;
     align-self: start;
 }
@@ -848,10 +771,13 @@ a {
     box-shadow: none;
     width: 150px;
     height: 75px;
+    padding-top: .6em;
+    padding-bottom: 30px;
 }
 
 .footer__info-wrapper {
     display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 918px) {
@@ -872,11 +798,12 @@ a {
     color: var(--accent-lt);
     font-size: 20px;
     margin-right: 0.8em;
+    margin-top: .1em;
 }
 
 .footer__navbar a {
     font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
-        sans-serif;
+    sans-serif;
     color: var(--clr-white);
     text-transform: uppercase;
     margin-bottom: 0.5em;
@@ -899,14 +826,16 @@ a {
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
+        row-gap: 10px;
     }
 }
 
 .footer__content-wrapper {
     display: flex;
-
-    /* width: 100% */
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 5em;
+    flex-wrap: wrap;
+    row-gap: 30px;
 }
 
 @media (max-width: 918px) {
@@ -933,8 +862,6 @@ a {
         -webkit-transform: none !important;
         transform: none !important;
     }
-<<<<<<< Updated upstream
-=======
 }
 
 .wrapper-text-center {
@@ -942,6 +869,23 @@ a {
 }
 
 .footer-button-wrapper {
-    display: grid;
->>>>>>> Stashed changes
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2em;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.footer__social-wrapper {
+    width: 150px;
+    height: 75px;
+    padding-top: .6em;
+}
+
+.footer__logotext-wrapper {
+    row-gap: 20px;
+    column-gap: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
