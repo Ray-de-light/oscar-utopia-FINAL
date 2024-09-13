@@ -1,0 +1,325 @@
+/* **************************** */
+/* ***CORE, RESET and PRESETS ** */
+/* **************************** */
+/* CORE */
+:root,
+:root.cf-theme-dark .theme-inverted {
+    --primary: hsl(238, 100%, 62%);
+    --secondary: hsl(0, 94%, 68%);
+    --tertiary: hsl(198, 74%, 51%);
+    --dark: hsl(0, 0%, 7%);
+    --light: hsl(85, 0%, 100%);
+    --success: hsl(136, 95%, 56%);
+    --error: hsl(351, 95%, 56%);
+    --space-4xs: clamp(0.33rem, calc(-0.03vw + 0.33rem), 0.31rem);
+    --space-3xs: clamp(0.41rem, calc(0.04vw + 0.4rem), 0.44rem);
+    --space-2xs: clamp(0.51rem, calc(0.16vw + 0.48rem), 0.62rem);
+    --space-xs: clamp(0.64rem, calc(0.35vw + 0.57rem), 0.88rem);
+    --space-s: clamp(0.8rem, calc(0.65vw + 0.67rem), 1.24rem);
+    --space-m: clamp(1rem, calc(1.11vw + 0.78rem), 1.75rem);
+    --space-l: clamp(1.25rem, calc(1.81vw + 0.89rem), 2.47rem);
+    --space-xl: clamp(1.56rem, calc(2.87vw + 0.99rem), 3.5rem);
+    --space-2xl: clamp(1.95rem, calc(4.44vw + 1.07rem), 4.95rem);
+    --space-3xl: clamp(2.44rem, calc(6.75vw + 1.09rem), 7rem);
+    --space-4xl: clamp(3.05rem, calc(10.13vw + 1.02rem), 9.89rem);
+    --text-xs: clamp(0.67rem, calc(-0.21vw + 0.71rem), 0.53rem);
+    --text-s: clamp(0.75rem, calc(-0.07vw + 0.76rem), 0.7rem);
+    --text-m: clamp(0.84rem, calc(0.14vw + 0.82rem), 0.94rem);
+    --text-l: clamp(0.95rem, calc(0.45vw + 0.86rem), 1.1rem);
+    --text--l: clamp(0.95rem, calc(0.45vw + 0.86rem), 1rem);
+    --text-xl: clamp(1.07rem, calc(0.89vw + 0.89rem), 1.67rem);
+    --text-2xl: clamp(1.2rem, calc(1.51vw + 0.9rem), 2.22rem);
+    --text-3xl: clamp(1.35rem, calc(2.38vw + 0.88rem), 2.96rem);
+    --text-4xl: clamp(1.52rem, calc(3.59vw + 0.8rem), 3.95rem);
+    --radius-xs: 0.25rem;
+    --radius-s: 0.5rem;
+    --radius-m: 1rem;
+    --radius-l: 2rem;
+    --radius-full: 999rem;
+    --shadow-s: 0 1px 2px var(--dark);
+    --shadow-m: 0 2px 10px var(--dark);
+    --shadow-l: 0 5px 30px var(--dark);
+}
+
+:root.cf-theme-dark,
+:root.cf-theme-light .theme-inverted {
+    --primary: hsl(238, 100%, 42%);
+    --primary-hover: hsl(238, 100%, 34%);
+    --secondary: hsl(198, 74%, 31%);
+    --tertiary: hsl(0, 94%, 48%);
+    --dark: hsl(0, 0%, 0%);
+    --light: hsl(0, 0%, 80%);
+}
+
+/* ------------------------------------------- */
+/* ************* RESETS & PRESETS ************ */
+/* ------------------------------------------- */
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin, padding */
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* An element that doesn't have a class gets default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    width: 100%;
+    height: auto;
+
+    /* -webkit-box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.35) */
+    /* box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.35) */
+    /* border-radius: 0.5rem */
+}
+
+li {
+    font-weight: 400;
+    font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
+    sans-serif;
+    font-size: var(--text-l);
+
+    /* Remove all animations and transitions for people that prefer not to see them */
+    @media (prefers-reduced-motion: reduce) {
+        html:focus-within {
+            scroll-behavior: auto;
+        }
+    }
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+}
+
+/* GRIDS, CONTAINERS, SECTIONS */
+:root {
+    --grid-max-width: 93rem;
+    --grid-gutter: var(--space-l);
+    --grid-columns: 12;
+}
+
+:root {
+    --grid-max-width: 93rem;
+    --grid-gutter: var(--space-l);
+    --grid-columns: 12;
+}
+
+.r-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 2em;
+}
+
+.r-container {
+    max-width: var(--grid-max-width);
+    margin: 0 auto;
+}
+
+.section-lt {
+    background-color: var(--clr-white);
+    padding-block: var(--space-2xl);
+    padding-inline: var(--space-l-2xl);
+}
+
+.section-dk {
+    background-color: var(--accent-dk);
+    padding-block: var(--space-2xl);
+    padding-inline: var(--space-l-2xl);
+}
+
+.section-lt h1,
+.section-lt h2,
+.section-lt h3,
+.section-lt li,
+.section-lt p {
+    color: black;
+}
+
+.section-dk h1,
+.section-dk h2,
+.section-dk h3,
+.section-dk li,
+.section-dk p {
+    color: white;
+}
+
+/* ***** FONTS ***** */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Cinzel, serif;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: var(--fonts-4);
+    margin-bottom: var(--space-l);
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: var(--fonts-2);
+    margin-bottom: clamp(0.63rem, calc(0.58rem + 0.22vw), 0.75rem);
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: var(--fonts-1);
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+h5 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+p {
+    font-size: var(--text-l);
+
+    /* color: inherit */
+    font-weight: 300;
+    font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
+    sans-serif;
+    line-height: 1.5;
+    margin-bottom: 0.7rem;
+}
+
+/* CORE FONT SIZES AND HEIGHT */
+/* H1 {
+    font-size: var(--text-4xl);
+    line-height: 1.1;
+}
+H2 {
+    font-size: var(--text-3xl);
+    line-height: 1.2;
+}
+H3 {
+    font-size: var(--text-2xl);
+    line-height: 1.3;
+}
+H4 {
+    font-size: var(--text-xl);
+    line-height: 1.3;
+}
+H5 {
+    font-size: var(--text-l);
+    line-height: 1.3;
+}
+H6 {
+    font-size: var(--text-m);
+    line-height: 1.4;
+} */
+/* **************************** 
+BUTTONS
+**************************** */
+.pri-btn {
+    background-color: var(--accent-dk);
+    padding: 12px 25px;
+    font-family: Poppins;
+    color: var(--clr-white);
+    width: 250px;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+}
+
+.pri-btn:hover {
+    background-color: #3c02bb;
+    color: #efe6ff;
+}
+
+.sec-btn {
+    background-color: var(--light);
+    color: black;
+    padding: 12px 25px;
+    font-family: Poppins, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
+    sans-serif;
+    width: 250px;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 2px solid black;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sec-btn:hover {
+    background-color: #efe6ff;
+}
+
+/* Remove all animations and transitions below 800px screen width */
+@media only screen and (max-width: 800px) {
+    * {
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+}
